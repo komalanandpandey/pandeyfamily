@@ -71,20 +71,20 @@ WSGI_APPLICATION = 'family.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pandeyfamily',
-        'USER': 'root',
-        'PASSWORD': '26@Komal2050',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTION': {
-            'charset': 'utf8mb4',
-            'use_unicode': 'True',
-        }
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'pandeyfamily',
+#         'USER': 'root',
+#         'PASSWORD': '26@Komal2050',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'OPTION': {
+#             'charset': 'utf8mb4',
+#             'use_unicode': 'True',
+#         }
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
