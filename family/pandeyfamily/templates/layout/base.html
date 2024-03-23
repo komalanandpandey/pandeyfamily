@@ -1,0 +1,27 @@
+{% include 'layout/header.html' %}
+{% block header %}
+<h5 class="logo">**जननी जन्मभूमिश्च स्वर्गादपि गरीयसी**</h5>
+{% endblock header %}
+<body>
+
+    {% include 'layout/nav.html' %}
+
+    {% block content %}
+
+    {% include 'about.html' %}
+
+    {% include 'contactus.html' %}
+
+    {% include 'video.html' %}
+
+    {% include 'kuldevta.html' %}
+
+    {% include 'vanshavali.html' %}
+
+    {% endblock content %}
+
+    {% include 'layout/footer.html' %}
+    {% block script %}
+    {% endblock script %}
+</body>
+<html>
