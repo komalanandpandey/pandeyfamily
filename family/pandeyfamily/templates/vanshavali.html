@@ -1,24 +1,16 @@
 {% extends "layout/base.html" %}
-
 {% load static %}
 {% block header %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}"/>
+
 {% endblock header %}
 
 {% block content %}
 <!-- ======= Contact Us Section ======= -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tạo cây gia phả (Family Tree) bằng CSS3</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<main id="main">
+    <!-- ======= My & Family Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
     <div class="tree">
       <ul>
         <li>
@@ -61,14 +53,16 @@
         </li>
       </ul>
     </div>
-  </body>
-</html>
+  </div>
+</section>
+  
+</main
 
 
 {% endblock content %}
 
 {% block script %}
-
+<script>
 $(function () {
     $('.genealogy-tree ul').hide();
     $('.genealogy-tree>ul').show();
@@ -80,5 +74,6 @@ $(function () {
         e.stopPropagation();
     });
 });
+</script>
 
 {% endblock script %}
